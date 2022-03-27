@@ -17,3 +17,6 @@ StatCheck $?
 Print "install jenkins"
 yum install jenkins -y &>>${LOG_FILE}
 StatCheck $?
+
+Print "Starting jenkins"
+systemctl enable jenkins &>>${LOG_FILE} && systemctl restart jenkins &>>${LOG_FILE}
