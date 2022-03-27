@@ -13,6 +13,7 @@ LOG_FILE=/tmp/jenkins.log
 rm -rf $LOG_FILE
 
 Print() {
+  echo "\n-----------------------$1 ---------------------------"
   echo -e "\e[36m $1 \e[0m"
 }
 
