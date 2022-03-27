@@ -1,6 +1,7 @@
 #!/bin/bash
 
 USER_ID=$(sudo id -u)
+echo $USER_ID
 if [ ${USER_ID} -ne 0 ]; then
   echo "\e[36m You need to be root user to run the script\e[0m"
   exit 2
