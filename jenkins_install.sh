@@ -19,4 +19,5 @@ yum install jenkins -y &>>${LOG_FILE}
 StatCheck $?
 
 Print "Starting jenkins"
-systemctl enable jenkins &>>${LOG_FILE} && systemctl restart jenkins &>>${LOG_FILE}
+systemctl enable jenkins &>>${LOG_FILE} && systemctl restart jenkins &>>${LOG_FILE} &>>${LOG_FILE}
+StatCheck $?
