@@ -11,9 +11,9 @@ rpm --import https://pkg.jenkins.io/redhat-stable/jenkins.io.key
 StatCheck $?
 
 Print "Install java"
-yum install fontconfig java-11-openjdk
+yum install fontconfig java-11-openjdk -y
 StatCheck $?
 
 Print "install jenkins"
-yum install jenkins
+yum install jenkins -y
 StatCheck $?
