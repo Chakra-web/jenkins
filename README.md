@@ -9,3 +9,8 @@ Enter the default admin password from
 2) create fist admin user
 3) Manage plugins - Available - git source code management - install without restart
 4) Create job - Freestyle project
+
+Select built with parameters
+Name: COMPONENT
+Execute shell - 
+ansible-playbook roboshop.yml -i inv  -e ansible_user=centos -e ansible_password=DevOps321 -e role_name=${COMPONENT} -e hosts=$(echo $COMPONENT | tr [a-z] [A-Z])
