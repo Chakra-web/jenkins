@@ -24,4 +24,8 @@ ansible-playbook roboshop.yml -i inv  -e ansible_user=centos
 
 Ansible configuration file (Sample)
 https://github.com/ansible/ansible/blob/stable-2.11/examples/ansible.cfg
-
+copy the content and create a config file in your project
+To enable color
+force_color = True (default is false)
+In jenkins
+Build Environment -> select color ANSI console output
