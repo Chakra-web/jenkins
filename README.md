@@ -14,3 +14,5 @@ Select built with parameters
 Name: COMPONENT
 Execute shell - 
 ansible-playbook roboshop.yml -i inv  -e ansible_user=centos -e ansible_password=DevOps321 -e role_name=${COMPONENT} -e hosts=$(echo $COMPONENT | tr [a-z] [A-Z])
+
+ansible-playbook roboshop.yml -i inv  -e ansible_user=centos -e ansible_password=DevOps321 -e role_name=${COMPONENT} -e hosts=$(echo $COMPONENT | tr [a-z] [A-Z]) --ssh-extra-args='-o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null'
